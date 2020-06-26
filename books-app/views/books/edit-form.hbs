@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+
+            <h1>Editar {{title}}</h1>
+
+            <form action="/libros/editar/{{_id}}" method="post">
+                <div class="form-group">
+                    <label for="title">Título</label>
+                    <input name="title" type="text" class="form-control" id="title" value="{{title}}">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <input name="description" type="text" class="form-control" id="description" value="{{description}}">
+                </div>
+                <div class="form-group">
+                    <label for="author">Autor</label>
+                    <input name="author" type="text" class="form-control" id="author" value="{{author}}">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Puntuación</label>
+                    <input name="rating" type="number" class="form-control" id="rating" value="{{rating}}">
+                </div>
+
+                <button type="submit" class="btn btn-dark">Editar libro</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    {{!-- <form action="/libros/crear" method="post">
+        <input name="title" type="text">
+        <input name="description" type="text">
+        <input name="author" type="text">
+        <input name="rating" type="number">
+
+        <input type="submit" value="Enviar">
+    </form> --}}
+
+    <a class="btn btn-dark non-radius" href="/libros/listado">Volver</a>
+</div>

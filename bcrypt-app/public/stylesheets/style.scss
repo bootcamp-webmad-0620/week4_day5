@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-special-xs {
+    padding: .2rem .4rem;
+    font-size: .675rem;
+    line-height: 1.5;
+}
+
+.bg-dark {
+    background-color: #000!important;
+}
+
+.navbar {
+  margin-bottom: 40px;
+}
+
+p.error {
+  color: red
+}

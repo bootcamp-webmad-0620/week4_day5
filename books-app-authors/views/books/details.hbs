@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <hr>
+
+    <h3>Descripción</h3>
+    {{description}}
+    <hr>
+    <h3>Autor/es</h3>
+
+    <ul>
+        {{#each author}}
+        <li>Nombre: {{this.name}} {{this.lastName}} ({{this.nationality}})</li>
+        {{/each}}
+    </ul>
+    <hr>
+    <h3>Puntuación: {{rating}}</h3>
+    <a class="btn btn-dark non-radius" href="/libros/listado">Volver</a>
+</div>
